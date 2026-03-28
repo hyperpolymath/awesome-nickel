@@ -1,5 +1,0 @@
-= awesome-nickel
-:toc: preamble
-:icons: font
-
-
