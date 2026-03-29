@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+
+[project]
+name = "awesome-nickel"
+description = "Awesome Nickel curated list"
+
+[container]
+base = "cgr.dev/chainguard/wolfi-base:latest"
