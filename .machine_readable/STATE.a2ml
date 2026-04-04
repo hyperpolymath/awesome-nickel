@@ -1,0 +1,41 @@
+; SPDX-License-Identifier: PMPL-1.0-or-later
+; Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
+;
+; .machine_readable/STATE.a2ml
+; Machine-readable project state for awesome-nickel.
+
+(state
+  (metadata
+    (repo "awesome-nickel")
+    (version "1.0.0")
+    (language "markdown")
+    (last-updated "2026-04-04"))
+
+  (project-context
+    (description "Curated awesome list for the Nickel configuration language")
+    (type "documentation/curated-list")
+    (test-strategy "Deno structural validation (no executable code to unit test)"))
+
+  (crg
+    (grade "C")
+    (achieved-date "2026-04-04")
+    (test-categories
+      (unit       "yes" (location "tests/validate.test.ts") (count 6))
+      (smoke      "yes" (location "tests/validate.test.ts") (count 6))
+      (property   "yes" (location "tests/validate.test.ts") (count 4))
+      (e2e        "yes" (location "tests/validate.test.ts") (count 3))
+      (contract   "yes" (location "tests/validate.test.ts") (count 4))
+      (aspect     "yes" (location "tests/validate.test.ts") (count 5))
+      (benchmarks "yes" (location "tests/validate.test.ts") (count 2) (type "performance-assertions"))))
+
+  (current-position
+    (milestone "CRG Grade C achieved")
+    (next-milestone "CRG Grade B (6 quality targets)"))
+
+  (blockers-and-issues
+    (none))
+
+  (critical-next-actions
+    (action "Add more entries to the curated list")
+    (action "Submit to awesome list maintainers for inclusion")
+    (action "Upgrade to CRG Grade B")))
