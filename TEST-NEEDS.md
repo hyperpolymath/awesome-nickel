@@ -1,6 +1,6 @@
 # TEST-NEEDS — awesome-nickel
 
-## CRG Grade C — ACHIEVED 2026-04-04
+## CRG Grade: C — ACHIEVED 2026-04-04
 
 This is a curated documentation/list repository with no executable application
 code. Tests validate the structural integrity of the awesome list using Deno.
