@@ -5,18 +5,71 @@
 
 The README makes claims. This file backs them up.
 
-[quote, README]
-____
-See the link:README.adoc[README] for details.
-____
+== Real Claims From The README
+
+**Claim 1: "Nickel is the universal configuration language… that automates the generation of static configuration files (JSON, YAML, TOML) using a principled design with gradual typing, first-class functions, and a contract system"** (README opening paragraphs)
+
+Nickel is developed by link:https://www.tweag.io/[Tweag] (a part of Modus Create). The link:https://nickel-lang.org/[official website] provides comprehensive documentation. Nickel's unique value proposition is that it combines:
+
+* **Gradual typing** — start untyped, add types incrementally
+* **First-class functions** — functions are values, enabling higher-order patterns
+* **Contract system** — declarative validation of configuration values at generation time
+
+The awesome-nickel list curates 70+ tools, integrations, and resources across the Nickel ecosystem. Key categories include:
+
+1. **Official Resources** — website, manual, playground, standard library
+2. **Tools** — CLI, language server, formatter, tree-sitter grammar, package index
+3. **Integrations** — Terraform, Kubernetes, Bazel, Go/Julia FFI, CI config generators
+4. **Libraries** — xcursor themes, editor configs (Helix, Vim, Emacs)
+5. **Articles & Talks** — release announcements, design deep dives, community discussions
+
+*How it works:* Each resource includes a URL, brief description, and category tag. The list is organized by function: the reader can jump to "Tools" to find editor integrations, "Integrations" to see Terraform/K8s configs, or "Articles" to understand language design. Caveat: As a curated list, coverage depends on maintainer awareness. Emerging tools may not be listed immediately; community pull requests are encouraged.
+
+**Claim 2: "K9 (Self-Validating Components)… where components validate against Nickel contracts at three security levels: Kennel (data), Yard (contracts), and Hunt (execution)"** (K9 section in README)
+
+The awesome-nickel list documents the relationship between Nickel and K9. The link:https://k9-svc.net[K9 specification] defines how Nickel contracts serve as validation schemas. The list includes:
+
+* `k9-rs` — Rust parser for K9 files
+* `k9-haskell` — Haskell parser
+* `k9-validate-action` — GitHub Action to validate K9 files in CI
+* `vscode-k9` — VS Code syntax highlighting
+
+These tools consume K9 `.k9` and `.k9.ncl` files where the `.k9.ncl` suffix indicates a Nickel contract backing the K9 spec. Kennel level (data) uses simple key-value YAML-like syntax; Yard level (contracts) adds Nickel type/validation rules; Hunt level (execution) adds runtime policy checks.
+
+*How it works:* A K9 file declares its security level and references a corresponding Nickel contract. The K9 parser loads the file and optionally validates against the contract. The k9-validate-action CI tool checks that all `.k9` files reference valid contracts before a pull request is merged. Caveat: Not all K9 implementations currently support full Nickel contract validation; rust/haskell parsers focus on the data layer (Kennel). Full Yard/Hunt support is under development.
+
+== Dogfooted Across The Account
+
+awesome-nickel serves as a discovery and reference hub. Nickel is used across multiple hyperpolymath projects:
+
+* link:https://github.com/hyperpolymath/nickel-augmentation[nickel-augmentation] — Nickel library extensions and utilities
+* link:https://github.com/hyperpolymath/standards[standards] — Standards repo (A2ML, K9 specs use Nickel)
+* link:https://github.com/hyperpolymath/conflow[conflow] — Configuration flow orchestrator for Nickel, CUE, YAML
+* link:https://github.com/hyperpolymath/aerie[aerie] — Network diagnostics suite (uses K9 specs with Nickel)
+
+The awesome-nickel list documents not just external tools but also hyperpolymath contributions to the Nickel ecosystem.
+
+== Technology Choices
+
+[cols="1,2,3"]
+|===
+| Technology | Learn More | Why
+
+| **Markdown** | https://www.markdownguide.org/ | Standard awesome-list format for discoverability
+| **Nickel** | https://nickel-lang.org | Subject of the list; configuration language
+| **K9 Standard** | https://k9-svc.net | Integration target (K9 uses Nickel contracts)
+|===
 
 == File Map
 
-[cols="1,2"]
+[cols="1,2,3"]
 |===
-| Path | What's There
+| Path | What's There | Key Details
 
-| `test(s)/` | Test suite
+| `README.md` | Curated list | 70+ links organized by category (tools, integrations, articles, community)
+| `contributing.md` | Contribution guidelines | How to add new resources and maintain list quality
+| `.editorconfig` | Editor config | Ensures consistent formatting (2-space indents, etc.)
+| `.gitignore` | Git ignore rules | Standard Node/IDE exclusions
 |===
 
 == Questions?
