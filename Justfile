@@ -7,6 +7,12 @@ import? "contractile.just"
 default:
     @just --list
 
+# Run the Idris2 test suite (ports validate.test.ts from May 2026).
+test:
+    @export IDRIS2_PREFIX="$(dirname "$(dirname "$(command -v idris2)")")" && \
+        idris2 --build awesome-nickel-tests.ipkg && \
+        ./build/exec/awesome-nickel-tests
+
 # Self-diagnostic — checks dependencies, permissions, paths
 doctor:
     @echo "Running diagnostics for awesome-nickel..."

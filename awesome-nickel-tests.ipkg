@@ -1,0 +1,16 @@
+-- SPDX-License-Identifier: PMPL-1.0-or-later
+-- awesome-nickel Idris2 test suite. Estate port 2/11.
+
+package awesome-nickel-tests
+
+sourcedir = "tests/idris2"
+
+depends = base
+
+modules = Test.Spec
+        , ValidateTest
+        , Main
+
+main = Main
+
+executable = "awesome-nickel-tests"
