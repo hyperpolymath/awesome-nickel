@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: PMPL-1.0-or-later
+// SPDX-License-Identifier: MPL-2.0
 // SPDX-FileCopyrightText: 2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 
 = Awesome Nickel image:https://awesome.re/badge.svg[Awesome,link="https://awesome.re"]
@@ -94,5 +94,5 @@ Contributions welcome! Read the link:contributing.md[contribution guidelines] fi
 
 == License
 
-SPDX-License-Identifier: PMPL-1.0-or-later +
+SPDX-License-Identifier: MPL-2.0 +
 See link:LICENSE[LICENSE].

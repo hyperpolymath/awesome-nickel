@@ -1,4 +1,4 @@
--- SPDX-License-Identifier: PMPL-1.0-or-later
+-- SPDX-License-Identifier: MPL-2.0
 -- Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
 --
 -- Port of tests/validate.test.ts to Idris2, estate-rollout port 2/11.
@@ -142,7 +142,7 @@ allSuites =
 
   , test "aspect: SECURITY.md has correct SPDX header" $ do
       content <- readFileToString "SECURITY.md"
-      assertTrue "SPDX PMPL-1.0-or-later" (isInfixOf "SPDX-License-Identifier: PMPL-1.0-or-later" content)
+      assertTrue "SPDX MPL-2.0" (isInfixOf "SPDX-License-Identifier: MPL-2.0" content)
 
   , test "aspect: README has no replacement char" $ do
       content <- readFileToString "README.adoc"
