@@ -1,100 +1,207 @@
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/hyperpolymath)
+<!--
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2025-2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
+-->
 
-// SPDX-License-Identifier: CC-BY-SA-4.0
-// SPDX-FileCopyrightText: 2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
+> A configuration language that combines the simplicity of JSON with the
+> power of functions, types, and contracts.
 
-= Awesome Nickel image:https://awesome.re/badge.svg[Awesome,link="https://awesome.re"]
-:toc: preamble
-:icons: font
+[Nickel](https://nickel-lang.org/) is the universal configuration
+language. It automates the generation of static configuration files
+(JSON, YAML, TOML) using a principled design with gradual typing,
+first-class functions, and a contract system for validation. Nickel is
+developed by [Tweag](https://www.tweag.io/) (a part of Modus Create).
 
-____
-A configuration language that combines the simplicity of JSON with the power of functions, types, and contracts.
-____
+Wondering how this works? See [EXPLAINME.adoc](EXPLAINME.adoc).
 
-https://nickel-lang.org/[Nickel] is the universal configuration language. It automates the generation of static configuration files (JSON, YAML, TOML) using a principled design with gradual typing, first-class functions, and a contract system for validation. Nickel is developed by https://www.tweag.io/[Tweag] (a part of Modus Create).
+# Official Resources
 
-Wondering how this works? See link:EXPLAINME.adoc[].
+- [Nickel Website](https://nickel-lang.org/) — Official website with
+  getting started guide.
 
-== Official Resources
+- [Nickel Repository](https://github.com/nickel-lang/nickel) — Source
+  code and issue tracker.
 
-* https://nickel-lang.org/[Nickel Website] — Official website with getting started guide.
-* https://github.com/nickel-lang/nickel[Nickel Repository] — Source code and issue tracker.
-* https://nickel-lang.org/user-manual/[User Manual] — Comprehensive language documentation.
-* https://nickel-lang.org/playground/[Nickel Playground] — Try Nickel in the browser.
-* https://nickel-lang.org/stdlib/[Standard Library Reference] — Built-in functions and contracts.
-* https://nickel-lang.org/getting-started/[Getting Started] — Installation and first steps.
+- [User Manual](https://nickel-lang.org/user-manual/) — Comprehensive
+  language documentation.
 
-== Tools
+- [Nickel Playground](https://nickel-lang.org/playground/) — Try Nickel
+  in the browser.
 
-* https://github.com/nickel-lang/nickel[Nickel CLI] — The reference interpreter with `eval`, `export`, `repl`, `format`, and `query` subcommands.
-* https://github.com/nickel-lang/nickel/tree/master/lsp[Nickel Language Server (NLS)] — LSP server providing diagnostics, type hints, completion, and formatting.
-* https://github.com/nickel-lang/json-schema-to-nickel[json-schema-to-nickel] — Convert JSON Schema specifications into Nickel contracts.
-* https://github.com/tweag/topiary[Topiary] — Universal formatter with Nickel support, used by `nickel format` under the hood.
-* https://github.com/nickel-lang/tree-sitter-nickel[tree-sitter-nickel] — Tree-sitter grammar for Nickel, enabling syntax highlighting across editors.
-* https://github.com/nickel-lang/nickel-mine[nickel-mine] — Package index for discovering and sharing Nickel packages.
-* https://github.com/nickel-lang/nickel-customs[nickel-customs] — Sanity-checking tool for published Nickel packages.
-* https://github.com/seryl/amalgam[Amalgam] — Generate type-safe Nickel configurations from any schema source.
-* https://github.com/GuilloteauQ/nickel2ci[nickel2ci] — Generate multiple CI configuration files from a single Nickel expression.
+- [Standard Library Reference](https://nickel-lang.org/stdlib/) —
+  Built-in functions and contracts.
 
-== Editor Support
+- [Getting Started](https://nickel-lang.org/getting-started/) —
+  Installation and first steps.
 
-* https://marketplace.visualstudio.com/items?itemName=Tweag.vscode-nickel[VS Code Extension] — Official VS Code extension with NLS integration.
-* https://github.com/nickel-lang/vim-nickel[vim-nickel] — Vim/Neovim plugin for syntax highlighting.
-* https://github.com/nickel-lang/nickel-mode[nickel-mode] — Emacs major mode for Nickel.
-* https://github.com/norpadon/zed-nickel-extension[Zed Extension] — Nickel support for the Zed editor.
+# Tools
 
-== Integrations
+- [Nickel CLI](https://github.com/nickel-lang/nickel) — The reference
+  interpreter with `eval`, `export`, `repl`, `format`, and `query`
+  subcommands.
 
-* https://github.com/nickel-lang/organist[Organist] — Batteries-included development environments with Nickel inside, controlling shells, formatters, and linters from a single console.
-* https://github.com/nickel-lang/tf-ncl[Terraform-Nickel (tf-ncl)] — Write Terraform configurations in Nickel with auto-generated provider contracts.
-* https://github.com/nickel-lang/tf-ncl-examples[tf-ncl-examples] — Example Terraform configurations written with tf-ncl.
-* https://github.com/nickel-lang/nickel-kubernetes[nickel-kubernetes] — Auto-generated Nickel contracts for Kubernetes resources, enabling type-checked and modular K8s definitions.
-* https://github.com/nickel-lang/rules_nickel[rules_nickel] — Bazel ruleset for generating configuration files with Nickel during builds.
-* https://github.com/nickel-lang/go-nickel[go-nickel] — Go bindings for embedding the Nickel configuration language.
-* https://github.com/LouLouLibs/NickelEval.jl[NickelEval.jl] — Julia FFI bindings for evaluating Nickel configurations.
-* https://github.com/Airsequel/Oclis[Oclis] — CLI specification format using Nickel contracts, with code generation for Rust, Haskell, and PureScript.
-* https://github.com/rgoulter/smart-keymap[smart-keymap] — Keyboard firmware using Nickel for keylayout configuration.
-* https://github.com/akavel/care[care] — Configuration management and reconciliation tool using Nickel.
+- [Nickel Language Server
+  (NLS)](https://github.com/nickel-lang/nickel/tree/master/lsp) — LSP
+  server providing diagnostics, type hints, completion, and formatting.
 
-== Libraries and Contracts
+- [json-schema-to-nickel](https://github.com/nickel-lang/json-schema-to-nickel)
+  — Convert JSON Schema specifications into Nickel contracts.
 
-* https://github.com/jneem/nickel-cursor[nickel-cursor] — Define xcursor themes using Nickel contracts.
-* https://github.com/jneem/helix-nickel[helix-nickel] — Nickel contracts for Helix editor configuration.
+- [Topiary](https://github.com/tweag/topiary) — Universal formatter with
+  Nickel support, used by `nickel` `format` under the hood.
 
-== Configuration Examples
+- [tree-sitter-nickel](https://github.com/nickel-lang/tree-sitter-nickel)
+  — Tree-sitter grammar for Nickel, enabling syntax highlighting across
+  editors.
 
-* https://nickel-lang.org/user-manual/getting-started[Nickel by Example] — Official tutorial walking through records, functions, merging, contracts, and more.
-* https://github.com/nickel-lang/tf-ncl-examples[tf-ncl-examples] — Real-world Terraform configurations written in Nickel.
+- [nickel-mine](https://github.com/nickel-lang/nickel-mine) — Package
+  index for discovering and sharing Nickel packages.
 
-== Formats Using Nickel
+- [nickel-customs](https://github.com/nickel-lang/nickel-customs) —
+  Sanity-checking tool for published Nickel packages.
 
-* https://github.com/hyperpolymath/pandoc-k9[K9 (Self-Validating Components)] — Configuration format where components validate against Nickel contracts at three security levels: Kennel (data), Yard (contracts), and Hunt (execution).
-* https://k9-svc.net[K9 Specification] — Format specification and documentation for K9.
-* https://github.com/hyperpolymath/k9-rs[k9-rs] — Rust parser for K9 self-validating component files.
-* https://github.com/hyperpolymath/k9-haskell[k9-haskell] — Haskell parser for K9 self-validating component files.
-* https://github.com/hyperpolymath/k9-validate-action[k9-validate-action] — GitHub Action to validate K9 configuration files.
-* https://github.com/hyperpolymath/vscode-k9[vscode-k9] — VS Code syntax highlighting for K9 `.k9` and `.k9.ncl` files.
-* https://github.com/hyperpolymath/conflow[Conflow] — Configuration flow orchestrator for Nickel, CUE, and validation workflows.
+- [Amalgam](https://github.com/seryl/amalgam) — Generate type-safe
+  Nickel configurations from any schema source.
 
-== Articles and Talks
+- [nickel2ci](https://github.com/GuilloteauQ/nickel2ci) — Generate
+  multiple CI configuration files from a single Nickel expression.
 
-* https://www.tweag.io/blog/2023-05-17-nickel-1.0-release/[Announcing Nickel 1.0] — Release announcement covering the vision and features of Nickel 1.0.
-* https://www.tweag.io/blog/tags/nickel/[Tweag Nickel Blog Posts] — All Nickel-related posts from the Tweag engineering blog, including deep dives on contracts, gradual typing, and language design.
-* https://discourse.nixos.org/t/nickel-the-nix-language-spin-off/9592[Nickel: the Nix language spin-off] — NixOS Discourse announcement explaining Nickel's relationship to Nix.
-* https://news.ycombinator.com/item?id=24858456[Nickel: Better Configuration for Less (Hacker News)] — Community discussion on Nickel's design goals.
+# Editor Support
 
-== Community
+- [VS Code
+  Extension](https://marketplace.visualstudio.com/items?itemName=Tweag.vscode-nickel)
+  — Official VS Code extension with NLS integration.
 
-* https://discord.gg/vYDnJYBmax[Discord] — Official Nickel Discord server.
-* https://github.com/nickel-lang/nickel/discussions[GitHub Discussions] — Ask questions and discuss Nickel development.
-* https://github.com/nickel-lang/nickel/issues[GitHub Issues] — Report bugs and request features.
-* https://discourse.nixos.org/[NixOS Discourse] — Broader Nix community where Nickel is frequently discussed.
+- [vim-nickel](https://github.com/nickel-lang/vim-nickel) — Vim/Neovim
+  plugin for syntax highlighting.
 
-== Contributing
+- [nickel-mode](https://github.com/nickel-lang/nickel-mode) — Emacs
+  major mode for Nickel.
 
-Contributions welcome! Read the link:contributing.md[contribution guidelines] first.
+- [Zed Extension](https://github.com/norpadon/zed-nickel-extension) —
+  Nickel support for the Zed editor.
 
-== License
+# Integrations
 
-SPDX-License-Identifier: CC-BY-SA-4.0 +
-See link:LICENSE[LICENSE].
+- [Organist](https://github.com/nickel-lang/organist) —
+  Batteries-included development environments with Nickel inside,
+  controlling shells, formatters, and linters from a single console.
+
+- [Terraform-Nickel (tf-ncl)](https://github.com/nickel-lang/tf-ncl) —
+  Write Terraform configurations in Nickel with auto-generated provider
+  contracts.
+
+- [tf-ncl-examples](https://github.com/nickel-lang/tf-ncl-examples) —
+  Example Terraform configurations written with tf-ncl.
+
+- [nickel-kubernetes](https://github.com/nickel-lang/nickel-kubernetes)
+  — Auto-generated Nickel contracts for Kubernetes resources, enabling
+  type-checked and modular K8s definitions.
+
+- [rules_nickel](https://github.com/nickel-lang/rules_nickel) — Bazel
+  ruleset for generating configuration files with Nickel during builds.
+
+- [go-nickel](https://github.com/nickel-lang/go-nickel) — Go bindings
+  for embedding the Nickel configuration language.
+
+- <a href="https://github.com/LouLouLibs/NickelEval.jl"
+  class="jl">NickelEval</a> — Julia FFI bindings for evaluating Nickel
+  configurations.
+
+- [Oclis](https://github.com/Airsequel/Oclis) — CLI specification format
+  using Nickel contracts, with code generation for Rust, Haskell, and
+  PureScript.
+
+- [smart-keymap](https://github.com/rgoulter/smart-keymap) — Keyboard
+  firmware using Nickel for keylayout configuration.
+
+- [care](https://github.com/akavel/care) — Configuration management and
+  reconciliation tool using Nickel.
+
+# Libraries and Contracts
+
+- [nickel-cursor](https://github.com/jneem/nickel-cursor) — Define
+  xcursor themes using Nickel contracts.
+
+- [helix-nickel](https://github.com/jneem/helix-nickel) — Nickel
+  contracts for Helix editor configuration.
+
+# Configuration Examples
+
+- [Nickel by
+  Example](https://nickel-lang.org/user-manual/getting-started) —
+  Official tutorial walking through records, functions, merging,
+  contracts, and more.
+
+- [tf-ncl-examples](https://github.com/nickel-lang/tf-ncl-examples) —
+  Real-world Terraform configurations written in Nickel.
+
+# Formats Using Nickel
+
+- [K9 (Self-Validating
+  Components)](https://github.com/hyperpolymath/pandoc-k9) —
+  Configuration format where components validate against Nickel
+  contracts at three security levels: Kennel (data), Yard (contracts),
+  and Hunt (execution).
+
+- [K9 Specification](https://k9-svc.net) — Format specification and
+  documentation for K9.
+
+- [k9-rs](https://github.com/hyperpolymath/k9-rs) — Rust parser for K9
+  self-validating component files.
+
+- [k9-haskell](https://github.com/hyperpolymath/k9-haskell) — Haskell
+  parser for K9 self-validating component files.
+
+- [k9-validate-action](https://github.com/hyperpolymath/k9-validate-action)
+  — GitHub Action to validate K9 configuration files.
+
+- [vscode-k9](https://github.com/hyperpolymath/vscode-k9) — VS Code
+  syntax highlighting for K9 `.k9` and `.k9.ncl` files.
+
+- [Conflow](https://github.com/hyperpolymath/conflow) — Configuration
+  flow orchestrator for Nickel, CUE, and validation workflows.
+
+# Articles and Talks
+
+- [Announcing Nickel
+  1.0](https://www.tweag.io/blog/2023-05-17-nickel-1.0-release/) —
+  Release announcement covering the vision and features of Nickel 1.0.
+
+- [Tweag Nickel Blog Posts](https://www.tweag.io/blog/tags/nickel/) —
+  All Nickel-related posts from the Tweag engineering blog, including
+  deep dives on contracts, gradual typing, and language design.
+
+- [Nickel: the Nix language
+  spin-off](https://discourse.nixos.org/t/nickel-the-nix-language-spin-off/9592)
+  — NixOS Discourse announcement explaining Nickel’s relationship to
+  Nix.
+
+- [Nickel: Better Configuration for Less (Hacker
+  News)](https://news.ycombinator.com/item?id=24858456) — Community
+  discussion on Nickel’s design goals.
+
+# Community
+
+- [Discord](https://discord.gg/vYDnJYBmax) — Official Nickel Discord
+  server.
+
+- [GitHub
+  Discussions](https://github.com/nickel-lang/nickel/discussions) — Ask
+  questions and discuss Nickel development.
+
+- [GitHub Issues](https://github.com/nickel-lang/nickel/issues) — Report
+  bugs and request features.
+
+- [NixOS Discourse](https://discourse.nixos.org/) — Broader Nix
+  community where Nickel is frequently discussed.
+
+# Contributing
+
+Contributions welcome! Read the [contribution
+guidelines](contributing.md) first.
+
+# License
+
+SPDX-License-Identifier: CC-BY-SA-4.0\
+See [LICENSE](LICENSE).
