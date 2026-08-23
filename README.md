@@ -172,10 +172,10 @@ Wondering how this works? See [EXPLAINME.adoc](EXPLAINME.adoc).
   All Nickel-related posts from the Tweag engineering blog, including
   deep dives on contracts, gradual typing, and language design.
 
-- [Nickel: the Nix language
-  spin-off](https://discourse.nixos.org/t/nickel-the-nix-language-spin-off/9592)
+- [Nickel: the Guix language
+  spin-off](https://discourse.nixos.org/t/nickel-the-guix-language-spin-off/9592)
   — NixOS Discourse announcement explaining Nickel’s relationship to
-  Nix.
+  Guix.
 
 - [Nickel: Better Configuration for Less (Hacker
   News)](https://news.ycombinator.com/item?id=24858456) — Community
@@ -193,7 +193,7 @@ Wondering how this works? See [EXPLAINME.adoc](EXPLAINME.adoc).
 - [GitHub Issues](https://github.com/nickel-lang/nickel/issues) — Report
   bugs and request features.
 
-- [NixOS Discourse](https://discourse.nixos.org/) — Broader Nix
+- [NixOS Discourse](https://discourse.nixos.org/) — Broader Guix
   community where Nickel is frequently discussed.
 
 # Contributing
